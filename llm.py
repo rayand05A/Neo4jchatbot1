@@ -7,7 +7,6 @@ try:
     llm = ChatOpenAI(
         openai_api_key=st.secrets["OPENAI_API_KEY"],  # Utilisation de la clé API stockée dans les secrets de Streamlit
         model=st.secrets["OPENAI_MODEL"],  # Modèle OpenAI à utiliser
-        openai_proxy=None,  # Explicitement aucun proxy
         timeout=30  # Timeout explicite pour les appels API
     )
 
