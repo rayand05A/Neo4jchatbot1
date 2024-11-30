@@ -18,6 +18,4 @@ try:
         openai_api_key=st.secrets["OPENAI_API_KEY"]
     )
 
-except Exception as e:
-    st.error("Erreur de configuration du LLM")
-    st.error(traceback.format_exc())
+__all__ = ['llm']
